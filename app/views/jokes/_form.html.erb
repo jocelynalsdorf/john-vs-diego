@@ -1,0 +1,9 @@
+<%= render "layouts/errors", :object => @joke %>
+
+<%= simple_form_for(@joke, html: {class: 'form-horizontal new-form'}) do |f| %>
+  <%= f.label :question %>
+  <%= f.text_field :question %>
+  <%= f.label :punchline %>
+  <%= f.text_field :punchline %>
+  <%= f.submit %>
+<% end %>

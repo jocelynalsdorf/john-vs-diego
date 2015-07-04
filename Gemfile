@@ -10,7 +10,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'pry'
-
+gem 'simple_form', '~> 3.1.0'
 
 
 group :development do
