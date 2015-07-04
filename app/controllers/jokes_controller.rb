@@ -28,7 +28,7 @@ before_action :find_joke, only: [:show, :edit, :update, :destroy]
 
   def update
 		if @joke.update(joke_params)
-			redirect_to @joke
+			redirect_to jokes_path
 		else
 			render :edit
   	end

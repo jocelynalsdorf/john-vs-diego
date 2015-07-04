@@ -5,8 +5,12 @@
         <p><%= @joke.question %></p>
         <p><%= @joke.punchline %></p>
       </div>
-      <button class="btn btn-default"><%= link_to "Back Home", root_path %></button>
-      <button class="btn btn-default"><%= link_to "Edit a joke", edit_joke_path %></button>
+      <button class="btn btn-default"><%= link_to "Edit a joke", edit_joke_path(@joke) %></button>
+      <button class="btn btn-default"><%= link_to "Delete joke", joke_path(@joke),
+      :data => {:confirm => "Do you really want to delete this classic?", :method => "delete"} %></button>
+      <br>
+      <br>
+      <p><%= link_to "Back Home", root_path %></p>
   </div>
   </div>
 </div>
