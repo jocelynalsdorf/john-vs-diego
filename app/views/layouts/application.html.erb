@@ -7,7 +7,34 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top" id="my-navbar">
+      <div class="container">
+        <div class="navbar-header">
+
+          <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+
+          <a href="/jokes" class="navbar-brand">Dad Jokes: John vs. Diego</a>
+
+        </div><!-- end of navbar header div -->
+         <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+          <% Category.all.each do |category| %>
+          <li><%= link_to category.name, jokes_path(category: category.name) %></li>
+          <% end %>
+        </ul>
+          <a class="btn btn-default navbar-btn navbar-right" href="#">Add a Joke</a>
+          <a class="btn btn-default navbar-btn navbar-right" href="#">Login</a>
+        </div><!-- end of nav that contains ul links -->
+
+      </div><!--end of nav container -->
+    </nav><!-- End navbar -->
+
 <div class="container">
+
   <%= yield %>
 </div>
 </body>

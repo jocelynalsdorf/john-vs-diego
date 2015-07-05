@@ -1,9 +1,57 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Lato:300|Grand+Hotel);
 
-.body {
-  padding-top: 60px;
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%
+}
+
+body {
+
+  height:100%;
+  padding-top: 100px;
+  background-image: -webkit-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:    -moz-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:     -ms-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:      -o-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:         linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  font-family: 'Lato', sans-serif;
 }
 .errors {
   list-style: none;
+}
+
+.navbar-default {
+  background-color: white;
+
+  color: #455a5b;
+  border: none;
+}
+
+ .navbar-header a.navbar-brand {
+  color: #455a5b;
+}
+.navbar-inverse .navbar-nav > li > a {
+  padding-top: 5px;
+  color: #455a5b;
+}
+a.btn.btn-default.navbar-btn.navbar-right {
+ margin-right: 9px;
+}
+
+.col-lg-6 {
+  background-color: white;
+  border-radius:3px;
+  height: 600px;
+  padding:30px;
+  border: 1px solid #82AEB1;
+
+}
+.ron-text {
+  font-family: 'Grand Hotel', cursive;
+  font-size:36px;
+  text-align: center;
 }

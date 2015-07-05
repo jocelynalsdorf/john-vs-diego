@@ -3,14 +3,20 @@
 
 <div class="container">
 <div class="row">
-		<div class="col-lg-12 all-skills-div">
+		<div class="col-lg-6">
 	  <% @jokes.each do |joke| %>
 	     <p><%= link_to joke.question, joke_path(joke) %></p>
 	  <% end %>
 
-		<button class="btn btn-default"><%= link_to "Add a joke", new_joke_path %></button>
 
+	</div><!-- end of col 3 -->
+		<div class="col-lg-6">
+			<div class="center-block test-center">
+				<p class="ron-text">Do I need to remind you</p>
+				<%= image_tag("ronb.jpeg", :alt => "ron burgendy", :class => "img-responsive center-block") %>
+				<p class="ron-text">to keep it classy?</p>
 
-		</div><!-- end of 2nd col 12 -->
+		<div class="text-center"><button class="btn btn-default"><%= link_to "Add a joke", new_joke_path %></button></div>
+		</div>
 	</div><!-- end of row 2 -->
 </div><!-- end of main container -->
