@@ -31,8 +31,10 @@ body {
   border: none;
 }
 
- .navbar-header a.navbar-brand {
+.navbar-header a.navbar-brand {
   color: #455a5b;
+  font-size:24px;
+  font-weight: bold;
 }
 .navbar-inverse .navbar-nav > li > a {
   padding-top: 5px;
@@ -52,6 +54,34 @@ a.btn.btn-default.navbar-btn.navbar-right {
 }
 .ron-text {
   font-family: 'Grand Hotel', cursive;
-  font-size:36px;
+  font-size:38px;
   text-align: center;
+}
+
+.btn-default {
+  background-image: -webkit-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:    -moz-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:     -ms-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:      -o-linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+  background-image:         linear-gradient(90deg, #668586 10%, #82AEB1 90%);
+
+}
+.btn-default:hover {
+  background-image: -webkit-linear-gradient(90deg, #668586 10%, #5b797b 90%);
+  background-image:    -moz-linear-gradient(90deg, #668586 10%, #5b797b 90%);
+  background-image:     -ms-linear-gradient(90deg, #668586 10%, #5b797b 90%);
+  background-image:      -o-linear-gradient(90deg, #668586 10%, #5b797b 90%);
+  background-image:         linear-gradient(90deg, #668586 10%, #5b797b 90%);
+
+}
+.btn-default a {
+  color: #fff;
+}
+
+.btn-default a:hover {
+  text-decoration: none;
+}
+
+a.btn.btn-default.navbar-btn.navbar-right {
+  color: #fff;
 }
